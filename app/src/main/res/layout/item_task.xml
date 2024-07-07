@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="@dimen/dp_4">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/avatar"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="2dp"
+                tools:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_4"
+                android:orientation="vertical">
+
+                <!--名字/时间-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:gravity="start|center"
+                        android:singleLine="true"
+                        android:textAppearance="?attr/textAppearanceListItem"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="标题" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_horizontal|end"
+                        android:singleLine="true"
+                        android:textSize="9sp"
+                        tools:ignore="SmallSp,TextSize"
+                        tools:text="分钟" />
+
+                </LinearLayout>
+
+                <!--包名-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/packagename"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:singleLine="true"
+                    android:textSize="9sp"
+                    tools:ignore="SmallSp,TextSize"
+                    tools:text="包名" />
+
+                <!--状态-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/state_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"
+                        tools:src="@drawable/ic_tick" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:gravity="start|center"
+                        android:singleLine="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="9sp"
+                        tools:ignore="SmallSp,TextSize"
+                        tools:text="完成" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

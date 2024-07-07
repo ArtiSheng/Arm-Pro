@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="host" translatable="false">192.168.2.12</string>
+    <string name="key" translatable="false">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDbqGRa+8lYx0lMmLaKh5s0r6RLesloYRjitS8AAqEZS5lEoIhOm3HsRDe6Uls8f/8kpNxlfXzeNHh/LC1pLduKv2/BSUjh+RDInQT7wDmEMJqlC+WCLiqYViVllLKBPvWA6D/C1jUeUwd393bHA+k/Ch0LIm6FUW+v+2assibcZwIDAQAB</string>
+    <string name="sign_key" translatable="false">MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAJzsaOgs7sRuThYxFdE5HqmKb5vJvMBNZIelRXZTXcYsQ8CBHDwEVjKFacPiT3fvqZSyzvxXxpS+gbxfzE3J0I5GaEkSDWsGSMcjNNwJ36MmFthdxYTfCkR6bYwsfGuKBdo86FGuThDmbXL68tT/a0HtQgCpebQxfiEGdTluOB9pAgMBAAECgYAT7mMUukBJask4QFvJCzw9xHuQifsTYcEXCYLdGJGcjhq85Kk1Zkecex2H58K4NRSQ8nUfz/ZFBj1sM667Ypq+hFTdxAVYXNE3tNxV8bS4wBAI6z4V96P+7mmXp+/GCublxW9AyPXHWDfgyr2MX9CrDQrZfTc+NAPKUYyNspH7UQJBANmHuNEy4t+Vy4YoDPM6B/uIMq+r1RsYWNgvKzWTpaT+BXf8P1YURRMNDW5mv6I7l1gEzqLRhs7qAgKVHW7idEcCQQC4rNTetnnQicF8M/chJPococ7KTVEclJgH1xpto5N/gxMBidXQNleir3dOWetffdFH7OjzkRFcHtA+GPd88hbPAkAUqyupXO9nlSEQby/D0Ii/opJGVMpb17VhXSH65jt/8M7uNp6B/E0P4VacXdDphkX8DADiQYxQjrWAL1Drn0KzAkA8jl/XD9rt6N4LTjbxJWDmVqCqcaPxTUB1AbHm1cad/2sSDBKSjd86t3LVvGKUE3u2rBbPF3irzmbWlfVBgVi9AkAOvjfqYb939tDJ0LozfIxc6ji1mlKK15G9qUiHH0vJTMX3Yr/j8BMM8QaSEWJRquWVJ2gB0JxoaxGQioyASKS0</string>
+    <string name="nav_header_subtitle" translatable="false">PanGolin520@Gmail.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="tencent_appid" translatable="false">1110300103</string>
+    <string name="google_login_failed" translatable="false">Google sign in failed</string>
+    <string name="filter_vcode" translatable="false">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="default_color" translatable="false">-16777216</string>
+    <integer name="startprot">10000</integer>
+    <integer name="endprot">10020</integer>
+    <integer name="upload_max">200</integer>
+</resources>

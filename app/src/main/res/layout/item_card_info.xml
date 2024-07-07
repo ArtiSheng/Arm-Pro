@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:text="@string/single_item_card"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:gravity="start|center"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:text="123456789" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:text="@string/single_item_type"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:gravity="start|center"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:text="月卡" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:text="@string/single_item_count"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:gravity="start|center"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:text="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:text="@string/single_item_mark"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:gravity="start|center"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:text="报记者现场空间限制" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:text="@string/single_item_status"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/usable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:gravity="start|center"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:text="冻结" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/usable_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:singleLine="true"
+                        android:text="@string/single_item_mac"
+                        android:textAppearance="?attr/textAppearanceListItem"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/mac"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:gravity="start|center"
+                        android:singleLine="true"
+                        android:textAppearance="?attr/textAppearanceListItem"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="1111111" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:singleLine="true"
+                        android:text="@string/single_item_usrcount"
+                        android:textAppearance="?attr/textAppearanceListItem"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/usrCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:gravity="start|center"
+                        android:singleLine="true"
+                        android:textAppearance="?attr/textAppearanceListItem"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:singleLine="true"
+                        android:text="@string/single_item_usrtime"
+                        android:textAppearance="?attr/textAppearanceListItem"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/usrTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:gravity="start|center"
+                        android:singleLine="true"
+                        android:textAppearance="?attr/textAppearanceListItem"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="2020 20 20" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

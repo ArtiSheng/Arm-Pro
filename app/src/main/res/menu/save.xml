@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020. Armadillo
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_save"
+        android:icon="@drawable/ic_menu_save_white"
+        android:orderInCategory="100"
+        android:title="@string/ic_menu_save"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_copy"
+        android:icon="@drawable/ic_menu_copy"
+        android:orderInCategory="100"
+        android:title="@string/ic_menu_copy_rule"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_paste"
+        android:icon="@drawable/ic_menu_paste"
+        android:orderInCategory="100"
+        android:title="@string/ic_menu_pasta_rule"
+        app:showAsAction="ifRoom" />
+</menu>

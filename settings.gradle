@@ -1,0 +1,2 @@
+rootProject.name='Armadillo'
+include ':app'

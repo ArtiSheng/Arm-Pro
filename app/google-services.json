@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "88155115032",
+    "firebase_url": "https://armadillo-c97c0.firebaseio.com",
+    "project_id": "armadillo-c97c0",
+    "storage_bucket": "armadillo-c97c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88155115032:android:5236ecf29d9e22d1793d6d",
+        "android_client_info": {
+          "package_name": "armadillo.studio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88155115032-6p8oh3sirao7s6bop5n761ee7jb9p6ap.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "armadillo.studio",
+            "certificate_hash": "05eaa533921af35cf053aa83f35d1cb5c3c913a1"
+          }
+        },
+        {
+          "client_id": "88155115032-tsshkpuqhug7jaqa2u3423il5677qigp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "armadillo.studio",
+            "certificate_hash": "b45765e2dd98963bd10a91844fee4147abe0b4e9"
+          }
+        },
+        {
+          "client_id": "88155115032-nbs0fgd5hdust1is5n7sth7d3h8shs37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXK1K7sjnj-5QMMnisaucKI1tV4G3YF_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88155115032-nbs0fgd5hdust1is5n7sth7d3h8shs37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="armadillo.studio.ui.user.UserFragment"
+        android:label="@string/menu_user"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="armadillo.studio.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_soft"
+        android:name="armadillo.studio.ui.software.SoftwareFragment"
+        android:label="@string/menu_soft"
+        tools:layout="@layout/fragment_software" />
+    <fragment
+        android:id="@+id/nav_signer"
+        android:name="armadillo.studio.ui.signer.SignerFragment"
+        android:label="@string/menu_signer"
+        tools:layout="@layout/fragment_signer" />
+    <fragment
+        android:id="@+id/nav_log"
+        android:name="armadillo.studio.ui.log.LogFragment"
+        android:label="@string/menu_log"
+        tools:layout="@layout/fragment_log" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="armadillo.studio.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_log" />
+</navigation>

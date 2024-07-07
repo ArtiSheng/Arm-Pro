@@ -1,0 +1,22 @@
+<!--
+  ~ Copyright (c) 2020. Armadillo
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+  <path
+      android:pathData="M511.3,511.8m-448,0a448,448 0,1 0,896 0,448 448,0 1,0 -896,0Z"
+      android:fillColor="#323453"/>
+  <path
+      android:pathData="M602,567.8H402c-22.1,0 -40,-17.9 -40,-40V402.5c0,-22.1 17.9,-40 40,-40h200c22.1,0 40,17.9 40,40v125.3c0,22.1 -17.9,40 -40,40z"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M679.4,679.8H343.3c-20.6,0 -37.3,-16.7 -37.3,-37.3V381.1c0,-20.6 16.7,-37.3 37.3,-37.3h110.2c10,0 19.4,4.7 25.4,12.7l22.6,30.2c6.2,8.3 15.9,13.1 26.2,13.1h151.7c20.6,0 37.3,16.7 37.3,37.3v205.4c0,20.6 -16.7,37.3 -37.3,37.3z"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M716.7,455.8H549.1c-4.4,0 -8,3.6 -8,8.1s3.6,8.1 8,8.1h167.6v-16.2z"
+      android:fillColor="#ffffff"/>
+</vector>

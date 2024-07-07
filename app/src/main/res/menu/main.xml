@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_auxiliary"
+        android:icon="@drawable/ic_menu_auxiliary"
+        android:orderInCategory="100"
+        android:title="@string/menu_auxiliary"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_signer"
+        android:icon="@drawable/ic_menu_signer_white"
+        android:orderInCategory="100"
+        android:title="@string/menu_signer"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_helper"
+        android:icon="@drawable/ic_menu_help"
+        android:orderInCategory="100"
+        android:title="@string/menu_helper"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:title="测试应用" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="2dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_custom_loader_mode" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/custom_loader_mode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:entries="@array/custom_loader_mode" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/soft_custom_loader_path" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/custom_loader_path"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="/assets/test.jar"
+                            android:textColor="@color/colorPrimary"
+                            tools:ignore="HardcodedText" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/soft_custom_invoke_mode" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/custom_invoke_mode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:entries="@array/custom_invoke_mode" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="@dimen/dp_10">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/TextAppearance.AppCompat.Body2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/soft_custom_invoke_rule"
+                                tools:ignore="RelativeOverlap" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/custom_helper"
+                                style="@style/TextAppearance.AppCompat.Body2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:text="？"
+                                android:textColor="@color/helper"
+                                tools:ignore="HardcodedText" />
+                        </RelativeLayout>
+
+
+                        <armadillo.studio.widget.XEditText
+                            android:id="@+id/custom_invoke_rule"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@drawable/shape_edittext_editor"
+                            android:gravity="start"
+                            android:hint="com.xxx.test([activity],s[test],i[123])"
+                            android:padding="@dimen/dp_5"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13sp"
+                            tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

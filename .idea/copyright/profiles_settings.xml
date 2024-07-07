@@ -1,0 +1,7 @@
+<component name="CopyrightManager">
+  <settings default="armadillo">
+    <module2copyright>
+      <element module="All" copyright="armadillo" />
+    </module2copyright>
+  </settings>
+</component>

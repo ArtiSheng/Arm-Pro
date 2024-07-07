@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020. Armadillo
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_group"
+        android:icon="@drawable/ic_menu_qq_group"
+        android:orderInCategory="100"
+        android:title="@string/menu_group"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_telegram"
+        android:icon="@drawable/ic_menu_telegram"
+        android:orderInCategory="100"
+        android:title="@string/menu_telegram"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_email"
+        android:icon="@drawable/ic_menu_email"
+        android:orderInCategory="100"
+        android:title="@string/menu_email"
+        app:showAsAction="ifRoom" />
+</menu>

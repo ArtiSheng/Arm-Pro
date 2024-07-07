@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_mlarge"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_marginRight="@dimen/spacing_mlarge"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:clipToPadding="false">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_margin="@dimen/spacing_xsmall"
+                        android:fastScrollEnabled="false"
+                        tools:src="@mipmap/ic_launcher" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/vip"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="@dimen/spacing_small"
+                        android:fastScrollEnabled="false"
+                        tools:background="@drawable/ic_vip1" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorAccent"
+                        app:fontFamily="sans-serif-medium"
+                        tools:text="@string/app_name" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/exptime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_40"
+                        tools:text="2010/10/10" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_mlarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_mlarge"
+                android:layout_marginRight="@dimen/spacing_mlarge"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/projects"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorAccent"
+                    app:fontFamily="sans-serif-medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/spacing_small">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/day_task_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/grey_90"
+                                app:fontFamily="sans-serif-medium" />
+
+                            <ProgressBar
+                                android:id="@+id/day_task_progress"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="90"
+                                android:progressDrawable="@drawable/circular_progress_bar" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/today_task"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/grey_60" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/spacing_small">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/day_available_task_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/grey_90"
+                                app:fontFamily="sans-serif-medium" />
+
+                            <ProgressBar
+                                android:id="@+id/day_available_task_progress"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="90"
+                                android:progressDrawable="@drawable/circular_progress_bar" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/day_task"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/grey_60" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/spacing_small">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/total_apps_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/grey_90"
+                                app:fontFamily="sans-serif-medium" />
+
+                            <ProgressBar
+                                android:id="@+id/total_apps_progress"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="80"
+                                android:progressDrawable="@drawable/circular_progress_bar" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/total_apps"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/grey_60" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/spacing_small">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/next_level_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/grey_90"
+                                app:fontFamily="sans-serif-medium" />
+
+                            <ProgressBar
+                                android:id="@+id/next_level_progress"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="85"
+                                android:progressDrawable="@drawable/circular_progress_bar" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/next_level"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/grey_60" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_middle" />
+
+            <include layout="@layout/user_other" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

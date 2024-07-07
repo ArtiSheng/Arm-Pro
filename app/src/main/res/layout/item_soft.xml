@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/avatar"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="2dp"
+                tools:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <!--标题/版本号-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    tools:ignore="NestedWeights,SpUsage"
+                    tools:text="标题 · 100" />
+
+                <!--包名-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/packagename"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:singleLine="true"
+                    android:textSize="9sp"
+                    tools:ignore="SmallSp,TextSize"
+                    tools:text="包名:com.Ks" />
+
+                <!--模式-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/model"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:singleLine="true"
+                    android:textSize="9sp"
+                    tools:ignore="SmallSp,TextSize"
+                    tools:text="模式:单码验证" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/soft_use_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="end|center"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    tools:text="0" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="end|center"
+                    android:singleLine="true"
+                    android:text="@string/usr_count"
+                    android:textSize="9sp"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

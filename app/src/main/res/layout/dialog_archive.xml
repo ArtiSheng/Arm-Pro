@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatar"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:singleLine="true"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="标题" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/packagename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="9sp"
+                tools:ignore="SmallSp,TextSize"
+                tools:text="包名" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="9sp"
+                tools:ignore="SmallSp,TextSize"
+                tools:text="100M" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/process_event"
+        android:textColor="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/type_recycler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/process_status"
+        android:textColor="@color/colorAccent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/archive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_archive"
+        app:backgroundTint="#F0F8FF"
+        app:borderWidth="0dp"
+        app:elevation="5dp"
+        app:fabCustomSize="50dp" />
+</LinearLayout>
+

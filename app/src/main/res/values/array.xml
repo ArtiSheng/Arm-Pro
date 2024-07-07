@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialog_cancel">
+        <item>@string/soft_notice_cancel_true</item>
+        <item>@string/soft_notice_cancel_false</item>
+    </string-array>
+    <string-array name="notice_dialog_style">
+        <item>@string/soft_notice_dialog_style_toast</item>
+        <item>@string/soft_dialog_style_native_bright</item>
+        <item>@string/soft_dialog_style_native_dark</item>
+        <item>@string/soft_dialog_style_ios</item>
+        <item>@string/soft_dialog_style_wave</item>
+        <item>@string/soft_dialog_style_video</item>
+        <item>@string/soft_dialog_style_gif</item>
+        <item>@string/soft_dialog_style_bilibili</item>
+        <item>@string/soft_dialog_style_custom_9</item>
+    </string-array>
+    <string-array name="notice_action">
+        <item>@string/soft_notice_event_null</item>
+        <item>@string/soft_notice_event_add_qq_group</item>
+        <item>@string/soft_notice_event_add_qq</item>
+        <item>@string/soft_notice_event_jump_url</item>
+        <item>@string/soft_notice_event_exit_app</item>
+        <item>@string/soft_notice_event_share_msg</item>
+    </string-array>
+    <string-array name="single_dialog_style">
+        <item>@string/soft_dialog_style_native_bright</item>
+        <item>@string/soft_dialog_style_native_dark</item>
+        <item>@string/soft_dialog_style_ios</item>
+        <item>@string/soft_dialog_style_wave</item>
+        <item>@string/soft_dialog_style_video</item>
+        <item>@string/soft_dialog_style_gif</item>
+        <item>@string/soft_dialog_style_bilibili</item>
+        <item>@string/soft_dialog_style_custom_9</item>
+    </string-array>
+    <string-array name="single_dialog_anim">
+        <item>FadeIn</item>
+        <item>Fall</item>
+        <item>FlipH</item>
+        <item>FlipV</item>
+        <item>NewsPaper</item>
+        <item>RotateBottom</item>
+        <item>RotateLeft</item>
+        <item>Shake</item>
+        <item>SideFall</item>
+        <item>SlideBottom</item>
+        <item>SlideLeft</item>
+        <item>SlideRight</item>
+        <item>SlideTop</item>
+        <item>Slit</item>
+    </string-array>
+    <string-array name="single_bind_mode">
+        <item>@string/soft_single_bind_single</item>
+        <item>@string/soft_single_bind_multi</item>
+        <item>@string/soft_single_bind_no</item>
+    </string-array>
+    <string-array name="single_extry_action">
+        <item>@string/soft_single_event_null</item>
+        <item>@string/soft_single_event_pay</item>
+        <item>@string/soft_single_event_query</item>
+        <item>@string/soft_single_event_try</item>
+    </string-array>
+    <string-array name="single_cancel_action">
+        <item>@string/soft_single_event_exit</item>
+        <item>@string/soft_single_event_pay</item>
+        <item>@string/soft_single_event_query</item>
+        <item>@string/soft_single_event_try</item>
+    </string-array>
+    <string-array name="single_card_type">
+        <item>@string/single_card_type_minute</item>
+        <item>@string/single_card_type_hour</item>
+        <item>@string/single_card_type_day</item>
+        <item>@string/single_card_type_week</item>
+        <item>@string/single_card_type_month</item>
+        <item>@string/single_card_type_year</item>
+    </string-array>
+    <string-array name="update_dialog_style">
+        <item>@string/soft_dialog_style_native_bright</item>
+        <item>@string/soft_dialog_style_native_dark</item>
+        <item>@string/soft_dialog_style_ios</item>
+        <item>@string/soft_dialog_style_wave</item>
+        <item>@string/soft_dialog_style_video</item>
+        <item>@string/soft_dialog_style_gif</item>
+        <item>@string/soft_dialog_style_bilibili</item>
+        <item>@string/soft_dialog_style_custom_9</item>
+    </string-array>
+    <string-array name="update_confirm_action">
+        <item>@string/soft_update_event_jump</item>
+        <item>@string/soft_update_event_dow</item>
+    </string-array>
+    <string-array name="update_action">
+        <item>@string/soft_notice_event_null</item>
+        <item>@string/soft_notice_event_add_qq_group</item>
+        <item>@string/soft_notice_event_add_qq</item>
+        <item>@string/soft_notice_event_jump_url</item>
+        <item>@string/soft_notice_event_exit_app</item>
+        <item>@string/soft_notice_event_share_msg</item>
+    </string-array>
+    <string-array name="custom_loader_mode">
+        <item>@string/soft_custom_loader_mode_1</item>
+        <item>@string/soft_custom_loader_mode_2</item>
+        <item>@string/soft_custom_loader_mode_3</item>
+    </string-array>
+    <string-array name="custom_invoke_mode">
+        <item>@string/soft_custom_invoke_mode_1</item>
+        <item>@string/soft_custom_invoke_mode_2</item>
+    </string-array>
+    <string-array name="signer_mode">
+        <item>V1</item>
+        <item>V1 + V2</item>
+        <item>V2(Android 7.0+)</item>
+    </string-array>
+    <string-array name="share_style">
+        <item>高斯模糊背景</item>
+        <item>动态视频</item>
+    </string-array>
+    <string-array name="share_action">
+        <item>分享到QQ</item>
+        <item>分享到微信</item>
+        <item>定向QQ(需要APPID支持)</item>
+        <item>系统可选</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="share_mode">
+        <item>永久分享次数</item>
+        <item>每日分享次数</item>
+    </string-array>
+</resources>

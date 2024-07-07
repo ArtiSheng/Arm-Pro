@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:title="测试应用" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="2dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_basic_config" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/share_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="标题"
+                                android:inputType="text"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <armadillo.studio.widget.XEditText
+                                android:id="@+id/share_msg"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:gravity="start"
+                                android:hint="内容"
+                                android:textColorHint="@color/colorPrimary"
+                                android:textSize="13sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/share_share_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="分享的标题"
+                                android:inputType="text"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <armadillo.studio.widget.XEditText
+                                android:id="@+id/share_share_msg"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:gravity="start"
+                                android:hint="分享的内容"
+                                android:textColorHint="@color/colorPrimary"
+                                android:textSize="13sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/bj_url"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="背景图/视频直链地址"
+                                android:inputType="textUri"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="页面风格" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/share_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:entries="@array/share_style" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="分享模式" />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/share_mode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:entries="@array/share_mode" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/share_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="分享次数"
+                                android:text="3"
+                                android:inputType="number"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="2dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_text_color_config"
+                            android:textColor="@color/black" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/dialog_title_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/soft_title_color"
+                                android:text="@string/default_color"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/dialog_msg_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/soft_msg_color"
+                                android:text="@string/default_color"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/dialog_confirm_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="分享按钮颜色"
+                                android:text="@string/default_color"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/dialog_cancel_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/soft_extra_color"
+                                android:text="@string/default_color"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/dialog_additional_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/soft_cancel_color"
+                                android:text="@string/default_color"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="2dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="分享按钮配置" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/notice_confirm_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="分享按钮文本"
+                                android:inputType="text"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/notice_confirm_action"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:entries="@array/share_action" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/notice_confirm_action_body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/soft_action_body"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="2dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_cancel_config" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/notice_cancel_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="取消按钮文本"
+                                android:inputType="text"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="2dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_extra_config" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/notice_additional_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="额外按钮文本"
+                                android:inputType="text"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/notice_additional_action"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:entries="@array/notice_action" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/notice_additional_action_body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/soft_action_body"
+                                android:textColorHint="@color/colorPrimary" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

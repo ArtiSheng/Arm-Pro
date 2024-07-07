@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020. Armadillo
+  -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="120.0"
+    android:toDegrees="140.0"
+    android:pivotX="50%"
+    android:pivotY="50%">
+    <item android:id="@android:id/background">
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.3"
+            android:thicknessRatio="20.0"
+            android:useLevel="false"
+            android:angle="0.0"
+            android:type="sweep">
+            <solid android:color="@color/divider_color" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <rotate
+            android:fromDegrees="270.0"
+            android:toDegrees="270.0">
+            <shape
+                android:shape="ring"
+                android:innerRadiusRatio="2.3"
+                android:thicknessRatio="20.0"
+                android:angle="0.0"
+                android:type="sweep">
+                <solid android:color="@color/red_300" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?><!--app:layout_scrollFlags="scroll|enterAlways"-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:title="测试应用" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/chartLineView"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <!--注册机-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/soft_mode_single"
+                            android:textColor="@color/colorAccent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_mode_single_tips"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/soft_mode_reg_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:tag="@string/soft_mode_single" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/soft_mode_reg_card_manage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_payment_black_24dp" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/soft_mode_reg_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_settings" />
+
+                </LinearLayout>
+
+                <!--远程公告-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_mode_notice"
+                            android:textColor="@color/colorAccent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_mode_notice_tips"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/soft_mode_notice_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:tag="@string/soft_mode_notice" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/soft_mode_notice_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_settings" />
+
+                </LinearLayout>
+
+                <!--远程更新-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_mode_update"
+                            android:textColor="@color/colorAccent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_mode_update_tips"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/soft_mode_update_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:tag="@string/soft_mode_update" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/soft_mode_update_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_settings" />
+
+                </LinearLayout>
+
+                <!--引流加群-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_mode_share"
+                            android:textColor="@color/colorAccent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_mode_share_tips"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/soft_mode_share_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:tag="@string/soft_mode_share" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/soft_mode_share_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_settings" />
+
+                </LinearLayout>
+
+                <!--Admob-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_mode_admob"
+                            android:textColor="@color/colorAccent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_mode_admob_tips"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/soft_mode_admob_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:tag="@string/soft_mode_admob" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/soft_mode_admob_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_settings" />
+
+                </LinearLayout>
+
+                <!--自定义模块-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Body1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_mode_custom"
+                            android:textColor="@color/colorAccent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/soft_mode_custom_tips"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/soft_mode_custom_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:tag="@string/soft_mode_custom" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/soft_mode_custom_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_settings" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <!--统计图-->
+        <com.lihang.chart.ChartLineView
+            android:id="@+id/chartLineView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dp_10"
+            app:cl_Y_dashColor="#CCCCCC"
+            app:cl_Y_showDash="true"
+            app:cl_axesColor="@color/colorAccent"
+            app:cl_dashColor="#ff0000"
+            app:cl_divideColor="@color/red_300"
+            app:cl_lineAnim_duration="1500"
+            app:cl_span="7" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
